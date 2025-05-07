@@ -187,6 +187,17 @@ z-index: 20;
 .item img{
     max-width: 100%;
 }
+.item-img{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    transform: translateY(50px);
+}
+.fade-in{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
 .item-text{
     padding: 15px 0 20px 0;
     font-weight: bold;

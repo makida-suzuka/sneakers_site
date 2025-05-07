@@ -25,5 +25,18 @@ window.addEventListener('load', function(){
         centerMode: true,// 前後スライドを部分表示
         centerPadding: '20%'// 両端の見切れるスライド幅
       });
+
+      window.addEventListener('scroll', function(){
+        const scroll = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const boxes = document.querySelectorAll('.item-img');
+      
+        boxes.forEach(function(box) {
+          const distanceToBox = box.offsetTop;
+          if(scroll + windowHeight > distanceToBox) {
+            box.classList.add('fade-in');
+          }
+        });
+      });
 })
 
