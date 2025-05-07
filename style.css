@@ -152,6 +152,10 @@ z-index: 20;
     text-align: center;
     margin: 0 0 30px 0;
 }
+.pickup-list{
+    display: flex;
+    gap: var(--gap);
+}
 
 #feature{
     max-width: 1240px;
