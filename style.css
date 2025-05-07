@@ -9,10 +9,13 @@ li{
 a{
     text-decoration: none;
 }
+:root {
+    --gap: 2vw;
+}
 
 body{
     margin: 0;
-    color: #333333;
+    color: #000000;
 }
 /* ヘッダー */
 #header{
@@ -24,7 +27,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 15px;
+    padding: 10px 20px;
     box-sizing: border-box;
     align-items: center;
 }
@@ -144,12 +147,105 @@ z-index: 20;
     width: 100%;
 }
 
+.sec-title{
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+#feature{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.item{
+    max-width: calc((100% - 2 * var(--gap)) / 3);
+    box-shadow: 1px 1px 10px 4px #CCCCCC;
+}
+.item-content{
+    padding: 25px;
+}
+.item img{
+    max-width: 100%;
+}
+.item-text{
+    padding: 15px 0 20px 0;
+    font-weight: bold;
+}
+.item-cat,.item-date{
+    font-size: 0.9rem;
+}
+.item-date{
+    text-align: right;
+}
+
+#contact{
+    background-color: #000000;
+    color: #fff;
+    max-width: 100%;
+    padding: 50px 0;
+}
+#contact .sec-title{
+    color: #fff;
+}
+.contact-wrapper{
+    margin: 0 auto;
+    display: flex;
+    max-width: 1240px;
+    gap: calc(var(--gap) * 4);
+}
+.contact-right,.contact-left{
+    width: calc(100% - calc(var(--gap) * 4) / 2);
+}
+
+.form-example{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-example input{
+    padding: 10px;
+    line-height: 1;
+    outline: none;
+}
+.form-example textarea{
+    resize: vertical;
+    outline: none;
+    line-height: 1;
+    padding: 10px;
+    height: 8em;
+}
+.form-example input.input-button{
+    width: 200px;
+    padding: 20px 0;
+    border: #fff solid 1px;
+    background-color: #000000;
+    color: #fff;
+}
+.form-example input.input-button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000000;
+}
+
 /* footer */
 footer{
+    background: #000000;
     text-align: center;
 }
 footer p{
-    font-size: 0.55rem;
+    font-size: 0.65rem;
+    background: #000000;
+    color: #fff;
+    margin: 0;
+    padding:10px 0;
 }
 
 
