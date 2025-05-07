@@ -15,5 +15,15 @@ window.addEventListener('load', function(){
         overlay.classList.toggle('active');
         console.log('good!'); // コンソール画面でgood!というメッセージが出る
       });
+
+      $(".pickup-list").slick({
+        autoplay: false, // 自動再生
+        arrows: false, // 矢印
+        dots: false, // インジケーター
+        slidesToShow: 2.1,
+        slidesToScroll:1,
+        centerMode: true,// 前後スライドを部分表示
+        centerPadding: '20%'// 両端の見切れるスライド幅
+      });
 })
 
