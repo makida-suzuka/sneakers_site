@@ -314,5 +314,13 @@ footer p{
     }
     .form-example input.input-button{
         width: 100%;
+        font-size: 100%;
+        font-family: serif;
+    }
+    .form-example input{
+        border-radius: 0;
+    }
+    .form-example textarea{
+        border-radius: 0;
     }
 }
