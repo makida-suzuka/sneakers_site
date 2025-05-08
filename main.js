@@ -20,10 +20,17 @@ window.addEventListener('load', function(){
         autoplay: false, // 自動再生
         arrows: false, // 矢印
         dots: false, // インジケーター
-        slidesToShow: 2.1,
+        slidesToShow: 3,
         slidesToScroll:1,
         centerMode: true,// 前後スライドを部分表示
-        centerPadding: '20%'// 両端の見切れるスライド幅
+        centerPadding: '10%',// 両端の見切れるスライド幅
+            responsive:[{
+                breakpoint: 485,
+                settings:{
+                    slidesToShow: 1,
+                    centerPadding: '15%',// 両端の見切れるスライド幅
+                }
+            }]
       });
 
       window.addEventListener('scroll', function(){
