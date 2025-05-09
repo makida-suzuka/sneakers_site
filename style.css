@@ -297,7 +297,8 @@ footer p{
         padding:  80px 0 50px 0;
     }
     .pickup-list li{
-        margin: 0 10px;
+        padding: 0 20px;
+
     }
     .grid{
         display: block;
