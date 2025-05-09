@@ -63,7 +63,7 @@ window.addEventListener('load', function(){
         //現在位置を取得
         const currentPos = window.scrollY;
         //ヘッダーの高さ
-        const gap = 100;
+        const gap = 80;
         //現在位置から目的のsectionまでのスクロール量
         const target = sectionTop + currentPos - gap;
         //特定の位置までスクロールさせる

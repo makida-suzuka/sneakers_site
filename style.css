@@ -20,16 +20,19 @@ body{
 /* ヘッダー */
 #header{
     /*固定header*/
-    position: sticky;
+    position: fixed;
     z-index: 1000;
     top: 0;
     background-color: #fff;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 40px;
     box-sizing: border-box;
     align-items: center;
+}
+.logo{
+    margin: 0;
 }
 
 /*ハンバーガーメニュー*/
