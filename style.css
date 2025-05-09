@@ -10,7 +10,8 @@ a{
     text-decoration: none;
 }
 :root {
-    --gap: 2vw;
+    /* --gap: 2vw; */
+    --gap:26px;
 }
 
 body{
@@ -165,7 +166,7 @@ z-index: 20;
     display: flex;
 }
 .pickup-list li{
-    margin: 0 25px;
+    padding: 0 30px;
 }
 .pickup-list li img{
     width: 100%;
