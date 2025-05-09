@@ -178,13 +178,15 @@ z-index: 20;
     padding: 50px 15px;
 }
 .grid{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .item{
-    max-width: calc((100% - 2 * var(--gap)) / 3);
+    /* max-width: calc((100% - 2 * var(--gap)) / 3); */
     box-shadow: 1px 1px 10px 4px #CCCCCC;
 }
 .item-content{
